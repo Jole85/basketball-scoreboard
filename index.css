@@ -28,7 +28,7 @@ body {
 }
 
 .team-container {
-  flex-basis: 155px;
+  flex-basis: 170px;
   margin-top: 20px;
 }
 
@@ -38,7 +38,15 @@ h3 {
   font-weight: 900;
   text-align: center;
   margin-bottom: 15px;
-  letter-spacing: 1rem;
+}
+
+#home {
+  margin-left: 13.5px;
+  letter-spacing: 1.2rem;
+}
+
+#guest {
+  letter-spacing: 1.1rem;
 }
 
 .scoreboard-home,
@@ -46,16 +54,20 @@ h3 {
   color: #f94f6d;
   background: #0a0001;
   font-family: scoreFont;
-  font-size: 89px;
+  font-size: 100px;
   margin-bottom: 26px;
   padding-top: 20px;
   padding-right: 20px;
   border-radius: 15px;
+  width: 170px;
+  border-left: 10px solid #0a0001;
 }
 
 .points-buttons {
   display: flex;
+  gap: 0.3rem;
   justify-content: space-around;
+  width: 200px;
 }
 
 button {
@@ -68,4 +80,12 @@ button {
   font-family: scoreFont;
   font-size: 18px;
   font-weight: 200;
+}
+
+#home-restart-score-btn,
+#guest-restart-score-btn {
+  border: 2px dotted #f94f6d;
+  border-radius: 50%;
+  color: #f94f6d;
+  padding: 0.3rem;
 }

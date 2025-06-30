@@ -7,27 +7,27 @@
 <body>
     <div class="container">
         <div class="team-container">
-            <h3>HOME</h3>
+            <h3 id="home">HOME</h3>
             <div class="scoreboard-home">
-                <h2 id="score-home">12</h2>
+                <h2 id="score-home">0</h2>
             </div>
             <div class="points-buttons">
-                <button id="home-score-btn-1">+1</button>
-                <button id="home-score-btn-2">+2</button>
-                <button id="home-score-btn-3">+3</button>
-                <button id="home-restart-score-btn">RESTART</button>
+                <button id="home-score-btn-1" onclick="plusOneHome()">+1</button>
+                <button id="home-score-btn-2" onclick="plusTwoHome()">+2</button>
+                <button id="home-score-btn-3" onclick="plusThreeHome()">+3</button>
+                <button id="home-restart-score-btn" onclick="resetHome()">RESTART</button>
             </div>
         </div>
         <div class="team-container">
-            <h3>GUEST</h3>
+            <h3 id="guest">GUEST</h3>
             <div class="scoreboard-guest">
-                <h2 id="score-guest">12</h2>
+                <h2 id="score-guest">0</h2>
             </div>
             <div class="points-buttons">
-                <button id="guest-score-btn-1">+1</button>
-                <button id="guest-score-btn-2">+2</button>
-                <button id="guest-score-btn-3">+3</button>
-                <button id="guest-restart-score-btn">RESTART</button>
+                <button id="guest-score-btn-1" onclick="plusOneGuest()">+1</button>
+                <button id="guest-score-btn-2" onclick="plusTwoGuest()">+2</button>
+                <button id="guest-score-btn-3" onclick="plusThreeGuest()">+3</button>
+                <button id="guest-restart-score-btn" onclick="resetGuest()">RESTART</button>
             </div>
         </div>
     </div>
