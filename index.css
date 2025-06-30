@@ -1,39 +1,71 @@
-body {
-  margin: 0;
-  text-align: center;
-}
-
-h3 {
-  color: #eeeeee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 @font-face {
   font-family: scoreFont;
   src: url("./CursedTimerUlil-Aznm.ttf");
 }
 
-.container {
-  display: flex;
-  justify-content: space-around;
-  background-color: #1b244a;
-  color: #e0f2fe;
-  width: 575px;
-  height: 385px;
-  margin: 50px auto 50px auto;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.score {
-  background: #0a0001;
-  font-size: 90px;
+body {
+  background-color: #9aabd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: #eeeeee;
+  background-color: #1b244a;
+  text-align: center;
+  width: 575px;
+  height: 385px;
+}
+
+.team-container {
+  flex-basis: 155px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 2.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 1rem;
+}
+
+.scoreboard-home,
+.scoreboard-guest {
   color: #f94f6d;
-  width: 120px;
-  margin: 20px;
+  background: #0a0001;
+  font-family: scoreFont;
+  font-size: 89px;
+  margin-bottom: 26px;
+  padding-top: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+}
+
+.points {
+  display: flex;
+  justify-content: space-around;
 }
 
 button {
   background: none;
-  border: 1px double #9aabd8;
   color: #9aabd8;
+  border: 1px solid #9aabd8;
+  border-radius: 5px;
+  flex-basis: 45px;
+  height: 45px;
   font-family: scoreFont;
+  font-size: 18px;
+  font-weight: 200;
 }
